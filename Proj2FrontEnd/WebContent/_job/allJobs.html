@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>List Of Jobs</title>
+</head>
+<body>
+<table class="table table-striped">
+<tr><th>Job ID</th><th>JobTitle</th><th>JobDescription</th><th>PostedOn</th><th>SkillsRequired</th><th>Salary</th><th>Location</th><th>DELETE</th></tr>
+<tr ng-repeat="j in jobs">
+<td>{{j.jobId}}</td>
+<td>{{j.jobTitle}}</td>
+<td>{{j.jobDescription}}</td>
+<td>{{j.postedOn | date:'MM/dd/yyyy'}}</td>
+<td>{{j.skillsRequired}}</td>
+<td>{{j.salary}}</td>
+<td>{{j.location}}</td>
+</tr>
+</table>
+</body>
+</html>

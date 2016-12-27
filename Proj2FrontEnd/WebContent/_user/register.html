@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"  />
+<title>Sign Up</title>
+</head>
+<body>
+<form>
+<table>
+<tr><td>Enter Name</td>
+<td><input type="text" ng-model="user.username"></td>
+</tr>
+<tr>
+<td>Enter Password</td>
+<td><input type="password" ng-model="user.password"></td>
+</tr>
+
+<tr>
+<td>Enter Email</td>
+<td><input type="email" ng-model="user.email"></td>
+</tr>
+
+
+<tr>
+<td>Select Role</td>
+<td>
+	<input type="radio" ng-model="user.role" value="Student">Student
+	<input type="radio" ng-model="user.role" value="Alumni">Alumni
+	<input type="radio" ng-model="user.role" value="Employee">Employee
+	 								
+	</td>
+</tr>
+
+<tr>
+<td><input type="submit"  ng-click="registerUser()"></td>
+</tr>
+</table>
+</form>
+{{errorMessage}}
+</body>
+</html>
